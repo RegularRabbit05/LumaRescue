@@ -269,7 +269,7 @@ void main(int argc, char **argv, u32 magicWord)
     }
 
     shouldLoadConfigMenu = needConfig == CREATE_CONFIGURATION || ((pressed & (BUTTON_SELECT | BUTTON_L1)) == BUTTON_SELECT);
-    if(shouldLoadConfigMenu)
+    if(shouldLoadConfigMenu || 1)
     {
         configMenu(pinExists, pinMode);
 
